@@ -8,7 +8,7 @@ public class PostgreSQLJDBC {
         Connection c = null;
         try {
             c = PostgresManager.getConnection();
-            c = DriverManager.getConnection("jdbc:postgresql://localhost:5432/postgres", "Himadri", "Shivaji@16");
+            c = DriverManager.getConnection("jdbc:postgresql://localhost:5432/postgres", "postgres", "Shivaji@16");
             Statement statement = c.createStatement();
             ResultSet resultSet = statement.executeQuery("select * from Passenger");
             while (resultSet.next()) {

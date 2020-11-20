@@ -12,9 +12,11 @@ public class PostgreSQLJDBC {
             Statement statement = c.createStatement();
             ResultSet resultSet = statement.executeQuery("select * from Passenger");
             while (resultSet.next()) {
-                System.out.println("idCard: " + resultSet.getLong("idCard"));
                 System.out.println("name: " + resultSet.getString("name"));
-                System.out.println("contact: " + resultSet.getInt("contact"));
+                System.out.println("age: " + resultSet.getInt("age"));
+                System.out.println("address: " + resultSet.getString("address"));
+                System.out.println("contact: " + resultSet.getInt("idCard"));
+                System.out.println("contact: " + resultSet.getLong("contact"));
                 System.out.println("==========================");
             }
         }

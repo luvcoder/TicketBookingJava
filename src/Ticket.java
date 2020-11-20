@@ -19,5 +19,5 @@ public class Ticket {
     public int getBerthnumber(){return berthnumber;}
     public void setBerthnumber(int berthnumber){this.berthnumber=berthnumber;}
     public int getDepartureTime(){return DepartureTime;}
-    public void setDepartureTime(int departureTime){this.DepartureTime=DepartureTime;}
+    public void setDepartureTime(int DepartureTime){this.DepartureTime=DepartureTime;}
 }
